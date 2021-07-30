@@ -5,10 +5,10 @@
     <input class="form-control" placeholder="Usuário"
            [(ngModel)]="usuario" name="usuario"/>
   </div>
+  <app-mensagem mensagem="Usuário obrigatório"></app-mensagem>
   <div class="form-group">
     <input class="form-control" placeholder="Senha" type="password"
            [(ngModel)]="senha" name="senha"/>
-
   </div>
 
   <button class="btn btn-primary btn-block" type="submit">Login</button>
