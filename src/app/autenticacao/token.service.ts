@@ -14,7 +14,7 @@ export class TokenService {
     }
 
     excluirToken() {
-        localStorage.removeItem(token)
+        localStorage.removeItem(KEY)
     }
 
     possuiToken() {

@@ -8,7 +8,7 @@ import { Router } from '@angular/router'
     styleUrls: ['./cabecalho.component.css'],
 })
 export class CabecalhoComponent implements OnInit {
-    user$ = this.userService.retornarUsuario()
+    user$ = this.usuarioService.retornarUsuario()
 
     constructor(
         private usuarioService: UsuarioService,
@@ -19,4 +19,7 @@ export class CabecalhoComponent implements OnInit {
         this.usuarioService.logout()
         this.router.navigate([''])
     }
+
+  ngOnInit(): void {
+  }
 }
